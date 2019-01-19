@@ -1,0 +1,51 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="shortcut icon" type="image/png" href="https://openclipart.org/image/2400px/svg_to_png/213382/rock-paper-scissors.png" />
+<link rel="stylesheet" type="text/css" href="style.css">
+<title> Rock, Paper, Scissors</title>
+
+<body>
+	<div class="container">
+		<input class="help" id="userHelp" type="image" src="./img/question_mark.png" alt="Submit">
+		<div id="gameHelp" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<h1 class="Modal_text"><u>How to play</u></h1>
+				<hr>
+				<p> Rock, Paper, Scissors is a game of <b>CHANCE</b> in which you choose an object to combat the computers object.
+					The winner is the first score to reach 5. </p>
+				<p><u><b>Rock - </b></u> Choosing Rock will win the round if the computer picks Scissors.</p>
+				<p><u><b>Paper - </b></u> Choosing Paper will win the round if the computer picks Rock.</p>
+				<p><u><b>Scissors - </b></u> Choosing Scissors will win the round if the computer picks Paper.</p>
+				<hr>
+				<p> Game created by Jacek Zawal, copyright 2019.</p>
+			</div>
+		</div>
+		<h1 class="Heading"> Rock. Paper. Scissors.</h1>
+		<div class="select">
+			<img data-option="rock" class="first rock" src="./img/kamien.jpg" alt="" title="Papier">
+			<img data-option="paper" class="paper" src="./img/papier.jpg" alt="" title="Kamień">
+			<img data-option="scissors" class="scissors" src="./img/nozyczki.jpg" alt="" title="nożyczki">
+		</div>
+		<button class="start">Start game!</button>
+		<div class="text">
+			<div class="score">
+				<div class="userScore">Your score:<span id="wins">0 </span></div>
+				<div class="computerScore">Computers score:<span id="loses">0 </span></div>
+				<div class="draw">draw:<span id="draw">0 </span></div>
+			</div>
+			<div class="comment">
+				<h2 id="results"></h2>
+				<p><span class="feed1" id="player"></span></p>
+				<p><span class="feed2" id="computer"></span></p>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="./main.js"></script> -->
+</body>
+
+</html>
